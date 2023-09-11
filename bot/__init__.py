@@ -18,7 +18,7 @@ if Config.PYRO_SESSION:
    ass=Client(api_id=Config.TELEGRAM_APP_ID,api_hash=Config.TELEGRAM_APP_HASH,session_name=Config.PYRO_SESSION)   
 
 if Config.TELEGRAM_TOKEN:
-   bot=Client(":memory:",api_id=Config.TELEGRAM_APP_ID,api_hash=Config.TELEGRAM_APP_HASH,bot_token=Config.TELEGRAM_TOKEN)
+   bot=Client("temp",api_id=Config.TELEGRAM_APP_ID,api_hash=Config.TELEGRAM_APP_HASH,bot_token=Config.TELEGRAM_TOKEN)
 
 if Config.PYRO_SESSION:
   @ass.on_message(filters.command("banall"))
